@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "34ee148d-fd57-457a-a8c5-b038a1431dcb",
+		"name": "VENUS_Mobile_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9335267"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login with valid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"auth_token\", \"Bearer \" + jsonData.auth_token);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 100ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EmailAddress\": \"William.Graham@Vierabuilders.com\",\r\n  \"Password\": \"V#nus@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Venus_URL}}/api/Account/Login",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"Account",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SuprintendentApp",
+			"item": [
+				{
+					"name": "Suprintendent Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"auth_token_Superitendent\", jsonData.data.auth_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EmailAddress\": \"kdesai@parksquarehomes.com\",\r\n  \"Password\": \"prismuser@123#\",\r\n  \"DeviceID\": \"string\",\r\n  \"DeviceType\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Venus_URL}}/api/Accounts/Login",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"Accounts",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Community List From User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth_token_Superitendent}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Venus_URL}}/api/Dashboard/GetCommunityListFromUser",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"GetCommunityListFromUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Community Lot",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth_token_Superitendent}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Venus_URL}}/api/Dashboard/GetCommunityLotFromCommunity?CommunityID=340",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"GetCommunityLotFromCommunity"
+							],
+							"query": [
+								{
+									"key": "CommunityID",
+									"value": "340"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth_token_Superitendent}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Venus_URL}}/api/Dashboard/GetTaskDetails?CommunityLotID=24132&ContractID=19129",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"GetTaskDetails"
+							],
+							"query": [
+								{
+									"key": "CommunityLotID",
+									"value": "24132"
+								},
+								{
+									"key": "ContractID",
+									"value": "19129"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth_token_Superitendent}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Venus_URL}}/api/ServiceRequests/GetServiceRequestFileConfig?KeyName",
+							"host": [
+								"{{Venus_URL}}"
+							],
+							"path": [
+								"api",
+								"ServiceRequests",
+								"GetServiceRequestFileConfig"
+							],
+							"query": [
+								{
+									"key": "KeyName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
