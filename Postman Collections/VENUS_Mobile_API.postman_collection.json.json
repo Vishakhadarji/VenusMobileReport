@@ -58,8 +58,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": "{{Venus_URL}}/api/Accounts/Login"
 					},
 					"response": []
 				}
