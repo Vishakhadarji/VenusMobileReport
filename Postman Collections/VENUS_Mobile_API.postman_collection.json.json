@@ -50,19 +50,6 @@
 						"url": "{{Venus_URL}}/api/Account/Login"
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "59ffa864-16fe-4d73-a4c8-874dd4e4024f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{Venus_URL}}/api/Accounts/Login"
-					},
-					"response": []
 				}
 			],
 			"id": "519c9ab9-0b2e-4279-bc9e-f73330cedf56"
