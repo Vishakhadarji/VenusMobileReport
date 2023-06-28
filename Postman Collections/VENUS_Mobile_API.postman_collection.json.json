@@ -31,7 +31,7 @@
 							}
 						}
 					],
-					"_postman_id": "33fd7df8-21d0-4748-ba61-8c99f3532e0b",
+					"id": "33fd7df8-21d0-4748-ba61-8c99f3532e0b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -50,9 +50,21 @@
 						"url": "{{Venus_URL}}/api/Account/Login"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "59ffa864-16fe-4d73-a4c8-874dd4e4024f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
-			"_postman_id": "519c9ab9-0b2e-4279-bc9e-f73330cedf56"
+			"id": "519c9ab9-0b2e-4279-bc9e-f73330cedf56"
 		},
 		{
 			"name": "SuprintendentApp",
@@ -72,7 +84,7 @@
 							}
 						}
 					],
-					"_postman_id": "09d095cf-4aae-48fe-9dad-94d0c97d3765",
+					"id": "09d095cf-4aae-48fe-9dad-94d0c97d3765",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -112,7 +124,7 @@
 							}
 						}
 					],
-					"_postman_id": "7000b467-0b00-4c8e-91b8-53a4a5f1e5d1",
+					"id": "7000b467-0b00-4c8e-91b8-53a4a5f1e5d1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -149,7 +161,7 @@
 							}
 						}
 					],
-					"_postman_id": "c439eb37-9bb7-4560-97f4-6aece4457e24",
+					"id": "c439eb37-9bb7-4560-97f4-6aece4457e24",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -202,7 +214,7 @@
 							}
 						}
 					],
-					"_postman_id": "1ee2bee8-b295-4ded-bdf5-65273d148823",
+					"id": "1ee2bee8-b295-4ded-bdf5-65273d148823",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -259,7 +271,7 @@
 							}
 						}
 					],
-					"_postman_id": "76d9ef2c-eda4-430d-8733-6d270bc94229",
+					"id": "76d9ef2c-eda4-430d-8733-6d270bc94229",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -293,7 +305,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "3b143683-da10-480b-8d85-d512efc2d65c"
+			"id": "3b143683-da10-480b-8d85-d512efc2d65c"
 		}
 	]
 }
