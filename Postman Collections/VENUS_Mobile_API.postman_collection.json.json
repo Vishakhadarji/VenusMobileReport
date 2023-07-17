@@ -19,18 +19,7 @@
 									"var jsonData = JSON.parse(responseBody);\r",
 									"postman.setEnvironmentVariable(\"auth_token\", \"Bearer \" + jsonData.auth_token);\r",
 									"\r",
-									"eval(globals.postmanBDD)\r",
-									"//eval(postman.getGlobalVariable('postmanBDD'));\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"describe('Testing Sample Request in Postman Tutorial', function () {\r",
-									"  it('CASE 1: Should respond with statusCode = 200', function () {\r",
-									"      response.should.have.status(200);\r",
-									"  });\r",
-									"  it('CASE 2: Should response time less than 500 ms', function () {\r",
-									"      pm.response.responseTime.should.be.below(500);\r",
-									"  });\r",
-									"\r",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
