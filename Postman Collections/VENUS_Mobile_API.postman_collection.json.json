@@ -29,9 +29,6 @@
 									"  it('CASE 2: Should response time less than 500 ms', function () {\r",
 									"      pm.response.responseTime.should.be.below(500);\r",
 									"  });\r",
-									"  it('CASE 3: User ID should be 1', function () {\r",
-									"      jsonData.userId === 1;\r",
-									"  });\r",
 									"\r",
 									"});"
 								],
