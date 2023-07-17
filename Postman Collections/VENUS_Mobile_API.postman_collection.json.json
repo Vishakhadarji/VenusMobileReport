@@ -23,7 +23,7 @@
 									"\r",
 									"it('Should be a successful response',() => {\r",
 									"    response.ok.should.be.true;\r",
-									"    response.should.have.status(1000);\r",
+									"    response.should.have.status(200);\r",
 									"})"
 								],
 								"type": "text/javascript"
