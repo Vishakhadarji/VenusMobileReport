@@ -19,7 +19,12 @@
 									"var jsonData = JSON.parse(responseBody);\r",
 									"postman.setEnvironmentVariable(\"auth_token\", \"Bearer \" + jsonData.auth_token);\r",
 									"\r",
-									""
+									"eval(globals.postmanBDD);\r",
+									"\r",
+									"it('Should be a successful response',() => {\r",
+									"    response.ok.should.be.true;\r",
+									"    response.should.have.status(1000);\r",
+									"})"
 								],
 								"type": "text/javascript"
 							}
