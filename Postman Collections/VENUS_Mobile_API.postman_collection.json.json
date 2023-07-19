@@ -52,7 +52,78 @@
 						},
 						"url": "{{Venus_URL}}/api/Account/Login"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "b8f0519a-1f51-48c3-89a4-5c675e617900",
+							"name": "Login with valid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"EmailAddress\": \"William.Graham@Vierabuilders.com\",\r\n  \"Password\": \"V#nus@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{Venus_URL}}/api/Account/Login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4400"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jul 2023 12:26:48 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"auth_token\": \"IBKZ3CjrjxKeiZXbIe0bWPTxXVK4f0pSClxKVH8B9-Vcs5KDmUaQD9bvRMSpdYzc_wULygUDOhXfI2ithLs9ZlwRe9bVgmiLG22zDZN1YpYcJE5T0421j4Y3WXfCiv1cW22m3iqp80yyVyNwiGcxShUrpUpiL1IXtxSYozCQaVYXeNJNJye-XlSdp1MImVIwwzxCHeBf0ihHq3PhLO-1LDcYVD-UuBWPrvBDx_NmruHiHGXcv7bekH94FpzhB3gubeN7CAfBhSnxs-7CYT7FSn9G-EyRz26hJloeOl6qH4AKwg12pXl9eU009-BNS9Yq1JlWZZzQXhkNX5L1zLFj345fIhrca2bOdnR3aSdGN31pFO3xqFktyqcqDi6nR1L-_h-PS1lxvH9K3IxAGNYaheyjc2bsYoGu2N1RVZ9GMGr3Hd_jctvb7BZHFvIwUssRqQJe0qN76B_8Ysp0ZFFfE22b2h2Ttyu1Wlty5e4i5YvVTLl_zQz-KeMTJxmiFy7vpiRpeUyqbe4Yey8I54bmyB8FQUycfpY6x8jwbXbskbAckpAAMMsbj3Lo4N4ph0Cqv46OHband3bhQIUK04u3nbg7A99XgU_BADFlssKICxYiDzkpXmR205OJd6DVIaIM4eVOycq268ySSfEtUPbCIb3x68AaqXn3lv1yCKOaH3gog3qMUnv5wgU2XcKks5aZxXsJzNzQHLgjbZdXJTCDvucrPuaBt44gZN0L2AM_Q9I1NcDaK46tBL69rk1btudPmTgTjgEoaGlixf5K2Pcvh_v9ioNqU-NrPh-fczzmbH18W-eHazPVS9rwjWhxER4Zmk3qCxxfvL8bCHwGrnQgj1DkmRti4jS6WmMEl_FS8ZH9kxAtjcXlK-IN2TU-J9teD2X19ufLqaf0xmFLhY2z-HxnS4Ycp2gMS4l32dgSI_Yj1EnqXbZVaTJwkhSCuNuOC30WXRgb0NYBYSdnguKAFR5jFH2yzSFH0KhbBHsXivXF5rfehB6yjquHrEaoc1nejvSuyox1K-ChzY4nYd8XvZoq5L4xDmaNxS0wxlFqIq1zDoS1ZeV84Xf-vINS8uAjQUI3olyfxtAa4p2gDfmCQ6zXlpj6n8DOzWJwztK0wGxyTyV8iuLMHdK_pjyFVPjD4SudbZ_sQI7Y9HUNugaSde7jVAAL_g89hI4LmrpANqf1NH9tlCHizd26kOPwiCvvqWCZnvECO1MrE9HheqXz1Tsaynnf7bbEOhalEE2_eFTYQ70N1mJegKAY2iw8Z0_v8bK92p0Ts_S2pGh2PKy6r8ehxM82p6aFmpvF8_CcIo6hJ1J3XMZXEt52ll4XRZdv00jeQHzypYvt3t4lb-IxD1sksYalXcOeUHd0m0AdaRVdgonoRp8a9A-0XVT4bthZLPSb3jUkdb_lE9YHJdeuIdHQCwsWDOGpBXBI8B55d4RMcch_RY7CTVjh2bY8UAh4bI17XGWwPTqXR2LZ95ANR6ffrcz7DhPNDWciNToBN4BbzanYZJWB24IdGds_fb9sv4LJGEUin2D0EW2KWvC83ixjM2EqlYXd3pIwJV-8DJM\",\n    \"buyer\": {\n        \"BuyerID\": 0,\n        \"Title\": null,\n        \"FirstName\": \"Bill\",\n        \"LastName\": \"Graham\",\n        \"MiddleName\": null,\n        \"Phone\": null,\n        \"EmailAddress\": \"William.Graham@Vierabuilders.com\",\n        \"Suffix\": null,\n        \"PrimaryAddress1\": null,\n        \"PrimaryAddress2\": null,\n        \"PrimaryCityID\": null,\n        \"PrimaryCityName\": null,\n        \"PrimaryZipCode\": null,\n        \"PrimaryCountryID\": null,\n        \"PrimaryCountry\": null,\n        \"PrimaryStateID\": null,\n        \"SecondaryAddress1\": null,\n        \"SecondaryAddress2\": null,\n        \"SecondaryCityID\": null,\n        \"SecondaryCityName\": null,\n        \"SecondaryZipcode\": null,\n        \"SecondaryCountryID\": null,\n        \"SecondaryCountry\": null,\n        \"SecondaryStateID\": null,\n        \"ContactPreference\": null,\n        \"IsAccompaniedByAgent\": null,\n        \"IsFutureEmailsParkSquareHome\": null,\n        \"AgentID\": null,\n        \"CRMTypeLookupID\": null,\n        \"OrganizationsID\": null,\n        \"Status\": null,\n        \"CreatedUserID\": null,\n        \"CreatedDate\": null,\n        \"ModifiedUserID\": null,\n        \"ModifiedDate\": null,\n        \"RowVersion\": null,\n        \"Mobile\": null,\n        \"Password\": null,\n        \"CommunityID\": 0,\n        \"CommunityLotID\": 0,\n        \"EncryptedCommunityLotID\": null,\n        \"JobNo\": null,\n        \"CommDescription\": null,\n        \"STCommunity\": null,\n        \"STCommunityID\": 0,\n        \"CommunityStatus\": null,\n        \"Section\": null,\n        \"Block\": null,\n        \"LotNo\": null,\n        \"LotAddress\": null,\n        \"LoginName\": null,\n        \"UserPassword\": null,\n        \"Buydear\": null,\n        \"BuyContr\": null,\n        \"buy2ndhome\": false,\n        \"GAll\": false,\n        \"GName\": false,\n        \"GContact\": false,\n        \"GMailTo\": false,\n        \"GDear\": false,\n        \"GBuyer1\": false,\n        \"GBuyer2\": false,\n        \"BuyNm1\": null,\n        \"BuyPhW1\": null,\n        \"BuyPhH1\": null,\n        \"BuyPhFx1\": null,\n        \"Address1\": null,\n        \"Mobilenumber1\": null,\n        \"Buyer2\": null,\n        \"BuyNm2\": null,\n        \"BuyPhW2\": null,\n        \"BuyPhH2\": null,\n        \"BuyPhFx2\": null,\n        \"Address2\": null,\n        \"GFirstname1\": null,\n        \"GMiddleName1\": null,\n        \"GLastName1\": null,\n        \"GFirstname2\": null,\n        \"GMiddleName2\": null,\n        \"GLastName2\": null,\n        \"ProjClos\": null,\n        \"PREVHOUSESOLD\": null,\n        \"PrevHouseClosed\": null,\n        \"BuyPhPg2\": null,\n        \"UserId\": 10710,\n        \"IsCall\": false,\n        \"IsText\": false,\n        \"IsEmail\": false,\n        \"ImageName\": \"\",\n        \"FileAccessUrl\": \"\",\n        \"IsCobuyer\": false,\n        \"CoBuyerID\": 0,\n        \"MimeType\": \"\",\n        \"ContractID\": 0,\n        \"EncryptedContractID\": null,\n        \"LicenseNo\": null,\n        \"PrimaryStateName\": null,\n        \"SecondaryStateName\": null,\n        \"MobileServiceProviderID\": 0,\n        \"ChangeOrderCount\": 0,\n        \"MaxFileSize\": null,\n        \"MaxFileSizeValidation\": null,\n        \"FileType\": null,\n        \"FileMimeType\": null,\n        \"FileTypeValidation\": null,\n        \"IsAssignBuyer\": false,\n        \"IsCompany\": false,\n        \"CompanyName\": null,\n        \"ContractBuyer\": null,\n        \"CallingAction\": null,\n        \"FromScreen\": null,\n        \"IsFinalised\": false,\n        \"AllowEdit\": false,\n        \"BuyerName\": null,\n        \"RedirectURL\": null,\n        \"IsLot\": false,\n        \"FutureDepositID\": 0,\n        \"RefundDepositID\": 0,\n        \"IsContractWrittenFromJPS\": false,\n        \"ProjectID\": 0,\n        \"PermitMinDate\": \"0001-01-01T00:00:00\",\n        \"PermitMaxDate\": \"0001-01-01T00:00:00\",\n        \"ValidDateRangeMessage\": null,\n        \"Name\": null,\n        \"IsImportedinST\": false,\n        \"IsSyncedData\": false,\n        \"IsAllowCancellation\": false,\n        \"IsAnySignedDocumnetAvailable\": false,\n        \"IsAnyCancellationAvailable\": false,\n        \"CancellationID\": 0,\n        \"SectionBlock\": null,\n        \"IsImportedinST1\": false\n    },\n    \"OrganizationList\": [],\n    \"buyeradditionalcontactinfo\": [],\n    \"coBuyerInfoList\": [],\n    \"CountryList\": [],\n    \"CityList\": [],\n    \"StateList\": [],\n    \"MobileProviderList\": null\n}"
+						}
+					]
 				}
 			],
 			"id": "519c9ab9-0b2e-4279-bc9e-f73330cedf56"
